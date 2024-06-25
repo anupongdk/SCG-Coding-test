@@ -33,6 +33,7 @@
 		F16FCEA62C2B1A4D00A5AF06 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCEA52C2B1A4D00A5AF06 /* rswift */; };
 		F16FCEAB2C2B1DCB00A5AF06 /* EndpointsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */; };
 		F16FCEAE2C2B244A00A5AF06 /* EndpointsStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */; };
+		F16FCEB12C2B296900A5AF06 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEB02C2B296900A5AF06 /* DataExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		F16FCEA02C2B19C600A5AF06 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsTest.swift; sourceTree = "<group>"; };
 		F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsStoreTest.swift; sourceTree = "<group>"; };
+		F16FCEB02C2B296900A5AF06 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		F16FCE532C2AF61000A5AF06 /* Anupong */ = {
 			isa = PBXGroup;
 			children = (
+				F16FCEB32C2B297400A5AF06 /* Extension */,
 				F16FCE862C2B147200A5AF06 /* Service */,
 				F16FCE542C2AF61000A5AF06 /* AppDelegate.swift */,
 				F16FCE562C2AF61000A5AF06 /* SceneDelegate.swift */,
@@ -175,6 +178,14 @@
 				F16FCE992C2B186C00A5AF06 /* NewsDataModel.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F16FCEB32C2B297400A5AF06 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F16FCEB02C2B296900A5AF06 /* DataExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 				F16FCE552C2AF61000A5AF06 /* AppDelegate.swift in Sources */,
 				F16FCE572C2AF61000A5AF06 /* SceneDelegate.swift in Sources */,
 				F16FCEA12C2B19C600A5AF06 /* Endpoints.swift in Sources */,
+				F16FCEB12C2B296900A5AF06 /* DataExtension.swift in Sources */,
 				F16FCE9A2C2B186C00A5AF06 /* NewsDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
