@@ -24,9 +24,15 @@
 		F16FCE922C2B162B00A5AF06 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCE912C2B162B00A5AF06 /* Moya */; };
 		F16FCE942C2B162B00A5AF06 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCE932C2B162B00A5AF06 /* ReactiveMoya */; };
 		F16FCE962C2B162B00A5AF06 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCE952C2B162B00A5AF06 /* RxMoya */; };
-		F16FCE982C2B168600A5AF06 /* NewServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCE972C2B168600A5AF06 /* NewServices.swift */; };
+		F16FCE982C2B168600A5AF06 /* NewsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCE972C2B168600A5AF06 /* NewsServices.swift */; };
 		F16FCE9A2C2B186C00A5AF06 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCE992C2B186C00A5AF06 /* NewsDataModel.swift */; };
 		F16FCE9D2C2B189000A5AF06 /* OptionallyDecodable in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCE9C2C2B189000A5AF06 /* OptionallyDecodable */; };
+		F16FCE9F2C2B19B200A5AF06 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCE9E2C2B19B200A5AF06 /* Extension.swift */; };
+		F16FCEA12C2B19C600A5AF06 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEA02C2B19C600A5AF06 /* Endpoints.swift */; };
+		F16FCEA42C2B1A4D00A5AF06 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCEA32C2B1A4D00A5AF06 /* RswiftLibrary */; };
+		F16FCEA62C2B1A4D00A5AF06 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = F16FCEA52C2B1A4D00A5AF06 /* rswift */; };
+		F16FCEAB2C2B1DCB00A5AF06 /* EndpointsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */; };
+		F16FCEAE2C2B244A00A5AF06 /* EndpointsStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +68,12 @@
 		F16FCE772C2AF61200A5AF06 /* AnupongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnupongUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F16FCE842C2B0D4A00A5AF06 /* Endpoints.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Endpoints.plist; sourceTree = "<group>"; };
 		F16FCE872C2B149D00A5AF06 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
-		F16FCE972C2B168600A5AF06 /* NewServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewServices.swift; sourceTree = "<group>"; };
+		F16FCE972C2B168600A5AF06 /* NewsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServices.swift; sourceTree = "<group>"; };
 		F16FCE992C2B186C00A5AF06 /* NewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataModel.swift; sourceTree = "<group>"; };
+		F16FCE9E2C2B19B200A5AF06 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F16FCEA02C2B19C600A5AF06 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsTest.swift; sourceTree = "<group>"; };
+		F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsStoreTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +82,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16FCE9D2C2B189000A5AF06 /* OptionallyDecodable in Frameworks */,
+				F16FCEA42C2B1A4D00A5AF06 /* RswiftLibrary in Frameworks */,
 				F16FCE962C2B162B00A5AF06 /* RxMoya in Frameworks */,
 				F16FCE8D2C2B15DE00A5AF06 /* SDWebImageMapKit in Frameworks */,
 				F16FCE8B2C2B15DE00A5AF06 /* SDWebImage in Frameworks */,
 				F16FCE922C2B162B00A5AF06 /* Moya in Frameworks */,
 				F16FCE942C2B162B00A5AF06 /* ReactiveMoya in Frameworks */,
 				F16FCE902C2B162B00A5AF06 /* CombineMoya in Frameworks */,
+				F16FCEA62C2B1A4D00A5AF06 /* rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				F16FCE6B2C2AF61200A5AF06 /* AnupongTests.swift */,
+				F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */,
+				F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */,
 			);
 			path = AnupongTests;
 			sourceTree = "<group>";
@@ -155,7 +169,9 @@
 		F16FCE862C2B147200A5AF06 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F16FCE972C2B168600A5AF06 /* NewServices.swift */,
+				F16FCEA02C2B19C600A5AF06 /* Endpoints.swift */,
+				F16FCE9E2C2B19B200A5AF06 /* Extension.swift */,
+				F16FCE972C2B168600A5AF06 /* NewsServices.swift */,
 				F16FCE992C2B186C00A5AF06 /* NewsDataModel.swift */,
 			);
 			path = Service;
@@ -175,6 +191,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F16FCEA82C2B1A8600A5AF06 /* PBXTargetDependency */,
 			);
 			name = Anupong;
 			packageProductDependencies = (
@@ -185,6 +202,8 @@
 				F16FCE932C2B162B00A5AF06 /* ReactiveMoya */,
 				F16FCE952C2B162B00A5AF06 /* RxMoya */,
 				F16FCE9C2C2B189000A5AF06 /* OptionallyDecodable */,
+				F16FCEA32C2B1A4D00A5AF06 /* RswiftLibrary */,
+				F16FCEA52C2B1A4D00A5AF06 /* rswift */,
 			);
 			productName = Anupong;
 			productReference = F16FCE512C2AF61000A5AF06 /* Anupong.app */;
@@ -262,6 +281,7 @@
 				F16FCE892C2B159100A5AF06 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				F16FCE8E2C2B162B00A5AF06 /* XCRemoteSwiftPackageReference "Moya" */,
 				F16FCE9B2C2B189000A5AF06 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */,
+				F16FCEA22C2B1A4D00A5AF06 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = F16FCE522C2AF61000A5AF06 /* Products */;
 			projectDirPath = "";
@@ -309,9 +329,11 @@
 			files = (
 				F16FCE592C2AF61000A5AF06 /* ViewController.swift in Sources */,
 				F16FCE882C2B149D00A5AF06 /* AppInfo.swift in Sources */,
-				F16FCE982C2B168600A5AF06 /* NewServices.swift in Sources */,
+				F16FCE9F2C2B19B200A5AF06 /* Extension.swift in Sources */,
+				F16FCE982C2B168600A5AF06 /* NewsServices.swift in Sources */,
 				F16FCE552C2AF61000A5AF06 /* AppDelegate.swift in Sources */,
 				F16FCE572C2AF61000A5AF06 /* SceneDelegate.swift in Sources */,
+				F16FCEA12C2B19C600A5AF06 /* Endpoints.swift in Sources */,
 				F16FCE9A2C2B186C00A5AF06 /* NewsDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16FCEAB2C2B1DCB00A5AF06 /* EndpointsTest.swift in Sources */,
+				F16FCEAE2C2B244A00A5AF06 /* EndpointsStoreTest.swift in Sources */,
 				F16FCE6C2C2AF61200A5AF06 /* AnupongTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +369,10 @@
 			isa = PBXTargetDependency;
 			target = F16FCE502C2AF61000A5AF06 /* Anupong */;
 			targetProxy = F16FCE722C2AF61200A5AF06 /* PBXContainerItemProxy */;
+		};
+		F16FCEA82C2B1A8600A5AF06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F16FCEA72C2B1A8600A5AF06 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -679,6 +707,14 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		F16FCEA22C2B1A4D00A5AF06 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -716,6 +752,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F16FCE9B2C2B189000A5AF06 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */;
 			productName = OptionallyDecodable;
+		};
+		F16FCEA32C2B1A4D00A5AF06 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16FCEA22C2B1A4D00A5AF06 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		F16FCEA52C2B1A4D00A5AF06 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16FCEA22C2B1A4D00A5AF06 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = rswift;
+		};
+		F16FCEA72C2B1A8600A5AF06 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16FCEA22C2B1A4D00A5AF06 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

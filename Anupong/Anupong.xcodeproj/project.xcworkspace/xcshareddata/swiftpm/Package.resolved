@@ -1,5 +1,5 @@
 {
-  "originHash" : "5c86a50b0389319792e984c8762e7d913293e67f6c1e8a1d1b021a0857950bbc",
+  "originHash" : "a1814add39a9cefd6d8b1ec6441574eafdc6519502394f7eb18f7c57a6392162",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -29,6 +29,15 @@
       }
     },
     {
+      "identity" : "r.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mac-cain13/R.swift.git",
+      "state" : {
+        "revision" : "384eab88d1a0b98ac96f4819e50a4308ecd5359f",
+        "version" : "7.5.0"
+      }
+    },
+    {
       "identity" : "reactiveswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
@@ -53,6 +62,24 @@
       "state" : {
         "revision" : "b8523c1642f3c142b06dd98443ea7c48343a4dfd",
         "version" : "5.19.3"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "xcodeedit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tomlokhorst/XcodeEdit",
+      "state" : {
+        "revision" : "b6b67389a0f1a6fdd9c6457a8ab5b02eaab13c5c",
+        "version" : "2.9.2"
       }
     }
   ],
