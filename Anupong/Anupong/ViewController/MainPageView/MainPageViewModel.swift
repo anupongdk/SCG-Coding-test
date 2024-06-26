@@ -33,6 +33,7 @@ class MainPageViewModel {
         var request: [String: Any] = [:]
         request["pageSize"] = pageSize
         request["page"] = articleListData.count / pageSize
+        request["country"] = "us"
         
         newsService.getNewsListData(request: request) { [weak self] result in
             self?.isLoading = false

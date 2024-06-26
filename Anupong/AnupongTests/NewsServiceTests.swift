@@ -68,7 +68,7 @@ class MockNewsService: NewsServiceProtocol {
                             description: "test desc",
                             url: "test url",
                             urlToImage: "www.google.com",
-                            publishedAt: Date(),
+                            publishedAt: "2024-06-24T12:27:00Z",
                             content: "test content")]
     
     func getNewsListData(request: [String: Any], onComplete: @escaping NewsListCallback) {

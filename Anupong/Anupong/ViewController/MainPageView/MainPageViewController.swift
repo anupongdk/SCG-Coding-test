@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MainPageTableViewController: UITableViewController {
     private var viewModel = MainPageViewModel()
@@ -14,7 +15,8 @@ class MainPageTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        navigationController?.navigationBar.barTintColor = AppTheme.mainAppColor
+        tableView.register(MainPageCell.self, forCellReuseIdentifier: "mainpageCell")
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -41,7 +43,13 @@ class MainPageTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mainpageCell", for: indexPath) as! MainPageCell
+        let articleData = viewModel.articleListData[indexPath.row]
+        cell.customImageView.sd_setImage(with: URL(string: articleData.urlToImage ?? ""))
+        cell.titleLabel.text = articleData.title
+        cell.descriptionLabel.text = articleData.content
+        cell.dateLabel.text = articleData.publishedAt.convertToAppDateFormat()
         return cell
     }
     
