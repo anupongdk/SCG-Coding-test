@@ -34,6 +34,9 @@
 		F16FCEAB2C2B1DCB00A5AF06 /* EndpointsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */; };
 		F16FCEAE2C2B244A00A5AF06 /* EndpointsStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */; };
 		F16FCEB12C2B296900A5AF06 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEB02C2B296900A5AF06 /* DataExtension.swift */; };
+		F16FCEB52C2B2C3E00A5AF06 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEB42C2B2C3E00A5AF06 /* MainPageViewController.swift */; };
+		F16FCEB82C2B2D5500A5AF06 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEB72C2B2D5500A5AF06 /* MainPageViewModel.swift */; };
+		F16FCEBA2C2BB04B00A5AF06 /* NewsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEB92C2BB04B00A5AF06 /* NewsServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsTest.swift; sourceTree = "<group>"; };
 		F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsStoreTest.swift; sourceTree = "<group>"; };
 		F16FCEB02C2B296900A5AF06 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		F16FCEB42C2B2C3E00A5AF06 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		F16FCEB72C2B2D5500A5AF06 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		F16FCEB92C2BB04B00A5AF06 /* NewsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 		F16FCE532C2AF61000A5AF06 /* Anupong */ = {
 			isa = PBXGroup;
 			children = (
+				F16FCEB62C2B2C5800A5AF06 /* ViewController */,
 				F16FCEB32C2B297400A5AF06 /* Extension */,
 				F16FCE862C2B147200A5AF06 /* Service */,
 				F16FCE542C2AF61000A5AF06 /* AppDelegate.swift */,
@@ -156,6 +163,7 @@
 				F16FCE6B2C2AF61200A5AF06 /* AnupongTests.swift */,
 				F16FCEAA2C2B1DCB00A5AF06 /* EndpointsTest.swift */,
 				F16FCEAD2C2B244A00A5AF06 /* EndpointsStoreTest.swift */,
+				F16FCEB92C2BB04B00A5AF06 /* NewsServiceTests.swift */,
 			);
 			path = AnupongTests;
 			sourceTree = "<group>";
@@ -186,6 +194,15 @@
 				F16FCEB02C2B296900A5AF06 /* DataExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F16FCEB62C2B2C5800A5AF06 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F16FCEB42C2B2C3E00A5AF06 /* MainPageViewController.swift */,
+				F16FCEB72C2B2D5500A5AF06 /* MainPageViewModel.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,10 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16FCEB52C2B2C3E00A5AF06 /* MainPageViewController.swift in Sources */,
 				F16FCE592C2AF61000A5AF06 /* ViewController.swift in Sources */,
 				F16FCE882C2B149D00A5AF06 /* AppInfo.swift in Sources */,
 				F16FCE9F2C2B19B200A5AF06 /* Extension.swift in Sources */,
 				F16FCE982C2B168600A5AF06 /* NewsServices.swift in Sources */,
+				F16FCEB82C2B2D5500A5AF06 /* MainPageViewModel.swift in Sources */,
 				F16FCE552C2AF61000A5AF06 /* AppDelegate.swift in Sources */,
 				F16FCE572C2AF61000A5AF06 /* SceneDelegate.swift in Sources */,
 				F16FCEA12C2B19C600A5AF06 /* Endpoints.swift in Sources */,
@@ -356,6 +375,7 @@
 			files = (
 				F16FCEAB2C2B1DCB00A5AF06 /* EndpointsTest.swift in Sources */,
 				F16FCEAE2C2B244A00A5AF06 /* EndpointsStoreTest.swift in Sources */,
+				F16FCEBA2C2BB04B00A5AF06 /* NewsServiceTests.swift in Sources */,
 				F16FCE6C2C2AF61200A5AF06 /* AnupongTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

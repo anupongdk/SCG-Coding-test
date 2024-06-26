@@ -8,13 +8,17 @@
 import Foundation
 import Moya
 
-class NewsServices {
+
+protocol NewsServiceProtocol {
     typealias NewsListCallback = (Result<NewsListResponse, Error>) -> Void
+    func getNewsListData(request: [String: Any], onComplete: @escaping NewsListCallback)
+}
+
+class NewsServices: NewsServiceProtocol {
     
     static var provider: MoyaProvider<Endpoints.News> {
         MoyaProvider<Endpoints.News>()
     }
-    
     
     func getNewsListData(request:[String :Any] ,onComplete: @escaping NewsListCallback) {
        
@@ -33,8 +37,6 @@ class NewsServices {
             }
         })
     }
-    
-    
     
 }
 

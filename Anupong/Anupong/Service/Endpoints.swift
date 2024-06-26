@@ -42,7 +42,7 @@ struct ApiEndPointStore {
 
 extension AppEndpoints {
     var key: String {
-        ""
+        "2635e42d51de48c88924b1f741d45011"
     }
     var method: Moya.Method {
         .get
@@ -61,7 +61,8 @@ extension AppEndpoints {
     }
 
     var headers: [String: String]? {
-        ["content-type": "application/json"]
+        ["content-type": "application/json",
+        "X-Api-Key": key]
     }
 }
 
