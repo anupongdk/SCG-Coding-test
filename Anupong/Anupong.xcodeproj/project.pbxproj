@@ -42,6 +42,7 @@
 		F16FCEC72C2BC0FD00A5AF06 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEC62C2BC0FD00A5AF06 /* StringExtensionTest.swift */; };
 		F16FCEC92C2BC75E00A5AF06 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCEC82C2BC75E00A5AF06 /* UIColorExtension.swift */; };
 		F16FCECC2C2BC79300A5AF06 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCECB2C2BC79300A5AF06 /* AppTheme.swift */; };
+		F16FCECF2C2BCA0300A5AF06 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FCECE2C2BCA0300A5AF06 /* DetailPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		F16FCEC62C2BC0FD00A5AF06 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		F16FCEC82C2BC75E00A5AF06 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F16FCECB2C2BC79300A5AF06 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		F16FCECE2C2BCA0300A5AF06 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		F16FCEB62C2B2C5800A5AF06 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F16FCECD2C2BC9E400A5AF06 /* DetailPage */,
 				F16FCECB2C2BC79300A5AF06 /* AppTheme.swift */,
 				F16FCEBC2C2BBA5300A5AF06 /* MainPageView */,
 			);
@@ -234,6 +237,14 @@
 				F16FCEBF2C2BBA8500A5AF06 /* MainPageCell.swift */,
 			);
 			path = MainPageCell;
+			sourceTree = "<group>";
+		};
+		F16FCECD2C2BC9E400A5AF06 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				F16FCECE2C2BCA0300A5AF06 /* DetailPageViewController.swift */,
+			);
+			path = DetailPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +405,7 @@
 				F16FCE982C2B168600A5AF06 /* NewsServices.swift in Sources */,
 				F16FCEB82C2B2D5500A5AF06 /* MainPageViewModel.swift in Sources */,
 				F16FCE552C2AF61000A5AF06 /* AppDelegate.swift in Sources */,
+				F16FCECF2C2BCA0300A5AF06 /* DetailPageViewController.swift in Sources */,
 				F16FCEC02C2BBA8500A5AF06 /* MainPageCell.swift in Sources */,
 				F16FCECC2C2BC79300A5AF06 /* AppTheme.swift in Sources */,
 				F16FCE572C2AF61000A5AF06 /* SceneDelegate.swift in Sources */,

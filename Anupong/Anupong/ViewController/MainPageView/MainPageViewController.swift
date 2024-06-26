@@ -60,12 +60,7 @@ class MainPageTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-        let selectedArticle = viewModel.isSearching ? viewModel.searchDataArray[indexPath.row] : viewModel.articleListData[indexPath.row]
-        
 
-    }
 }
 
 extension MainPageTableViewController: UISearchResultsUpdating {
@@ -73,4 +68,17 @@ extension MainPageTableViewController: UISearchResultsUpdating {
         viewModel.searchForArticle(searchController.searchBar.text ?? "")
         tableView.reloadData()
     }
+}
+
+
+extension MainPageTableViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+                let detailVC =  DetailPageViewController()
+                let selectedArticle = viewModel.isSearching ? viewModel.searchDataArray[indexPath.row] : viewModel.articleListData[indexPath.row]
+                detailVC.article = selectedArticle
+                self.navigationController?.pushViewController(detailVC , animated: true)
+            
+    }
+    
 }
