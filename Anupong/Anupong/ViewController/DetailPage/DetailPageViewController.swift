@@ -8,9 +8,9 @@
 import UIKit
 
 class DetailPageViewController: UIViewController {
-        
+    
     var article: Article?
-        
+    
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -51,7 +51,7 @@ class DetailPageViewController: UIViewController {
         setupViews()
         setupData()
     }
-        
+    
     private func setupViews() {
         view.addSubview(imageView)
         view.addSubview(titleLabel)
@@ -78,8 +78,8 @@ class DetailPageViewController: UIViewController {
             descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
             
             publishLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 8),
-            publishLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            publishLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            publishLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+            publishLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
         ])
     }
     
@@ -88,7 +88,7 @@ class DetailPageViewController: UIViewController {
         imageView.sd_setImage(with: URL(string: article.urlToImage ?? ""))
         titleLabel.text = article.title
         descriptionLabel.text = article.content
-        publishLabel.text = article.publishedAt.convertToAppDateFormat()
+        publishLabel.text = "Updated : \(article.publishedAt.convertToAppDateFormat())"
     }
     
     @objc private func backButtonTapped() {

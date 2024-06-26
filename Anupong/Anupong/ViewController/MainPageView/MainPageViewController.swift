@@ -49,7 +49,7 @@ class MainPageTableViewController: UITableViewController {
         cell.customImageView.sd_setImage(with: URL(string: articleData.urlToImage ?? ""))
         cell.titleLabel.text = articleData.title
         cell.descriptionLabel.text = articleData.content
-        cell.dateLabel.text = articleData.publishedAt.convertToAppDateFormat()
+        cell.dateLabel.text  = "Updated : \(articleData.publishedAt.convertToAppDateFormat())"
         return cell
     }
     
@@ -65,7 +65,7 @@ class MainPageTableViewController: UITableViewController {
 
 extension MainPageTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        viewModel.searchForArticle(searchController.searchBar.text ?? "")
+        
         tableView.reloadData()
     }
 }
